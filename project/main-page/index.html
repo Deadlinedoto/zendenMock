@@ -1,10 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zenden</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<header>
+    <div class="top-header">
+        <div class="left-top__header">
+            <div class="city-select">
+                <svg class="geo-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                     viewBox="0 0 48 48">
+                    <path fill="#52ae32" fill-rule="evenodd"
+                          d="M23.424 41.817L24 41l-.576.817Zm1.152 0l.004-.002l.01-.007l.03-.023l.118-.085c.1-.074.246-.182.43-.324c.368-.282.89-.697 1.513-1.23a43.403 43.403 0 0 0 4.575-4.54C34.564 31.78 38 26.319 38 20.076c0-3.73-1.474-7.31-4.098-9.95A13.962 13.962 0 0 0 24 6a13.962 13.962 0 0 0-9.902 4.125A14.117 14.117 0 0 0 10 20.077c0 6.242 3.436 11.703 6.744 15.529a43.403 43.403 0 0 0 4.575 4.54c.624.533 1.145.948 1.513 1.23a25.536 25.536 0 0 0 .547.41l.032.022l.009.007l.004.002c.345.243.807.243 1.152 0ZM24 41l.576.817L24 41Zm5-21a5 5 0 1 1-10 0a5 5 0 0 1 10 0Z"
+                          clip-rule="evenodd"/>
+                </svg>
+                <a class="city-name">Москва</a>
+            </div>
+            <div class="navi">
+                <a class="navi-select">Магазины</a>
+            </div>
+            <div class="navi">
+                <a class="navi-select">Доставка</a>
+            </div>
+            <div class="navi">
+                <a class="navi-select__no-br">Статус заказа</a>
+            </div>
+        </div>
+        <div class="right-top__header">
+            <svg class="phone-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                 viewBox="0 0 16 16">
+                <path fill="currentColor"
+                      d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5c-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7c.4.4 3.9 4 7 3.9c1.8 0 2.7-.2 4.9-2.6c1-1.1-2.5-3.3-3.6-3.4z"/>
+            </svg>
+            <a href="tel:8 00 600-22-02">8 800 600-22-02</a>
+        </div>
+    </div>
+    <div class="bot-header">
+        <div class="bot-header__left">
+            <svg class="navi-icon" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                 viewBox="0 0 50 50">
+                <path fill="white" d="M10 12h30v4H10zm0 10h30v4H10zm0 10h30v4H10z"/>
+            </svg>
+            <img class='zenden-logo' src="svg/zenden-logo.svg" alt="">
+        </div>
+
+        <div class="bot-header__center">
+            <nav role="navigation" class="navigation">
+                <ul>
+                    <a class="navi-item" href="">Женщинам</a>
+                </ul>
+                <ul>
+                    <a class="navi-item" href="">Мужчинам</a>
+                </ul>
+                <ul>
+                    <a class="navi-item" href="">Детям</a>
+                </ul>
+                <ul>
+                    <a class="navi-item" href="">Аксессуары</a>
+                </ul>
+                <ul>
+                    <a class="navi-item" href="">Одежда</a>
+                </ul>
+                <ul>
+                    <a class="navi-item" href="">Бренды</a>
+                </ul>
+                <ul>
+                    <a class="navi-item" style="color: #ff4a4a" href="">Скидки</a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bot-header__right">
+            <div class="profile-menu__header">
+                <div class="profile-menu__item">
+                    <svg class="profile-menu__svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                         height="undefined" viewBox="0 0 128 128">
+                        <circle cx="63.93" cy="64" r="60" fill="#689F38"/>
+                        <circle cx="60.03" cy="63.1" r="56.1" fill="#7CB342"/>
+                        <path fill="#AED581"
+                              d="M23.93 29.7c4.5-7.1 14.1-13 24.1-14.8c2.5-.4 5-.6 7.1.2c1.6.6 2.9 2.1 2 3.8c-.7 1.4-2.6 2-4.1 2.5a44.64 44.64 0 0 0-23 17.4c-2 3-5 11.3-8.7 9.2c-3.9-2.3-3.1-9.5 2.6-18.3z"/>
+                    </svg>
+                    <a class="profile-menu__name">ZENDEN club</a>
+                </div>
+                <div class="profile-menu__item">
+                    <svg class="profile-menu__svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                         height="undefined" viewBox="0 0 1000 1000">
+                        <path fill="white"
+                              d="m746 641l254 255l-105 105l-254-254q-106 72-232 72q-169 0-289-120T0 410t120-289T409 1t289 120t120 289q0 127-72 231zm-65-231q0-113-79.5-193T409 137t-193 80t-80 193t80 192.5T409 682t192.5-79.5T681 410z"/>
+                    </svg>
+                    <a class="profile-menu__name">Поиск</a>
+                </div>
+                <div class="profile-menu__item">
+                    <svg class="profile-menu__svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                         height="undefined" viewBox="0 0 24 24">
+                        <g fill="none" stroke="white" stroke-width="2">
+                            <path stroke-linejoin="round"
+                                  d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/>
+                            <circle cx="12" cy="7" r="3"/>
+                        </g>
+                    </svg>
+                    <a class="profile-menu__name">Войти</a>
+                </div>
+                <div class="profile-menu__item">
+                    <svg class="profile-menu__svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                         height="undefined" viewBox="0 0 24 24">
+                        <path fill="white"
+                              d="M12.001 3.818a6.228 6.228 0 0 1 8.51 9.087l-5.224 5.225h-.001L12 21.415l-7.28-7.279l-1.23-1.232c-.001 0 0 0 0 0A6.228 6.228 0 0 1 12 3.818Zm3.285 11.485l3.811-3.812a4.228 4.228 0 1 0-5.98-5.98L12 6.627L10.883 5.51a4.228 4.228 0 1 0-5.98 5.98l1.232 1.232L12 18.587l3.285-3.285Z"/>
+                    </svg>
+                    <a class="profile-menu__name">Избранное</a>
+                </div>
+                <div class="profile-menu__item">
+                    <svg class="profile-menu__svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                         height="undefined" viewBox="0 0 24 24">
+                        <path fill="white"
+                              d="M7.5 5.5a4.5 4.5 0 0 1 9 0V7H21v16H3V7h4.5V5.5Zm0 3.5H5v12h14V9h-2.5v3h-2V9h-5v3h-2V9Zm7-2V5.5a2.5 2.5 0 0 0-5 0V7h5Z"/>
+                    </svg>
+                    <a class="profile-menu__name">Корзина</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="bonus">
+        <img class="bonus-img" src="imgs/header-bonuses.png" alt="">
+        <div>
+            <button class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined" viewBox="-6 -6 24 24">
+                    <path fill="#525252"
+                          d="m7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485L2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535l3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="add">
+        <button class="add-btn">
+            <svg class="svg-add__btn" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                 viewBox="0 0 48 48">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                      d="M31 36L19 24l12-12"/>
+            </svg>
+        </button>
+        <div class="swapper-pagination">
+            <span class="swapper-pagination__item"></span>
+            <span class="swapper-pagination__item"></span>
+            <span class="swapper-pagination__item"></span>
+            <span class="swapper-pagination__item"></span>
+        </div>
+        <button class="add-btn">
+            <svg class="svg-add__btn" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                 viewBox="0 0 48 48">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                      d="m19 12l12 12l-12 12"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="categories">
+        <div class="categories-image__container">
+            <img class="categories-img" src="imgs/woman-main.jpg" alt="">
+            <div class="categories-name">Женщинам</div>
+        </div>
+        <div class="categories-image__container">
+            <img class="categories-img" src="imgs/man-main.jpg" alt="">
+            <div class="categories-name">Мужчинам</div>
+        </div>
+        <div class="categories-image__container">
+            <img class="categories-img" src="imgs/kids-main.jpg" alt="">
+            <div class="categories-name">Детям</div>
+        </div>
+    </div>
+
+    <div class="hot-and-best">
+        <div class="hot-and-best__name">
+            <div class="hot-name">
+                <svg class="hot-and-best__svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                          d="M19.745 10.5a1.41 1.41 0 0 1-.26.66l-7.94 10.73a.94.94 0 0 1-.53.35a.827.827 0 0 1-.22 0a1.099 1.099 0 0 1-.4-.08a1 1 0 0 1-.55-1l.8-6.21h-5.13a1.41 1.41 0 0 1-.7-.22a1.33 1.33 0 0 1-.46-.56a1.45 1.45 0 0 1-.1-.69c.03-.236.12-.46.26-.65l7.94-10.71a.93.93 0 0 1 .51-.34a1 1 0 0 1 .63.06a.94.94 0 0 1 .44.42a1 1 0 0 1 .11.55l-.8 6.21h5.14a1.16 1.16 0 0 1 .7.22c.194.141.35.33.45.55c.096.223.134.467.11.71"/>
+                </svg>
+                <a>Бестселлеры</a>
+            </div>
+            <div class="hot-name">
+                <svg class="hot-and-best__svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined" viewBox="0 0 16 16">
+                    <path fill="currentColor"
+                          d="M12.9 15.4L8 12.8l-4.9 2.6L4 10L0 6.1l5.5-.8l2.4-5l2.4 5l5.5.8L12 10l.9 5.4z"/>
+                </svg>
+                <a>Новинки</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer></footer>
+
 </body>
 </html>
+<script src="script.js"></script>

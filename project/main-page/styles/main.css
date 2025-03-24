@@ -1,0 +1,125 @@
+.bonus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    background: #52ae32;
+}
+.bonus-img {
+    margin: auto;
+}
+.close-btn {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    margin-right: 16px;
+}
+
+
+
+
+
+.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../imgs/add4.jpg") no-repeat;
+    height: 550px;
+    background-size: cover;
+    padding: 0 30px;
+
+}
+
+.add-img {
+    height: 550px;
+    width: 100%;
+}
+
+.add-btn {
+    color: white;
+    height: 50px;
+    width: 50px;
+    background: #000a19;
+    border-radius: 50%;
+    border: none;
+
+}
+.svg-add__btn {
+    margin-right: 3px;
+    height: 26px;
+    width: 26px;
+}
+.swapper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.swapper-pagination__item:empty {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-top: 450px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 35px 200px;
+}
+
+.categories-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.hot-and-best {
+    height: 700px;
+
+}
+.hot-and-best__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+}
+.hot-and-best__svg {
+    height: 22px;
+    width: 22px;
+    color: #525252;
+}
+.hot-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #525252;
+    cursor: pointer;
+}
+
+.hot-name:hover .hot-and-best__svg{
+    color: #303030;
+}
+
+.hot-name:active .hot-and-best__svg,
+.hot-name:active {
+    color: #52ae32;
+    border-bottom: 1px solid #52ae32;
+}

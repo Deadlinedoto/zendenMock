@@ -1,0 +1,33 @@
+/* Сброс маржи и паддингов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Сброс стилей для списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Сброс стилей для ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Сброс стилей для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Сброс стилей для таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Сброс стилей для изображений */
+img {
+    border: 0;
+}
