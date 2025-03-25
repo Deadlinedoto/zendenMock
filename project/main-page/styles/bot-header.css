@@ -24,7 +24,7 @@
     width: 25px;
 }
 
-.navigation {
+.bot-header__center-navigation {
     display: flex;
     gap: 20px;
     color: white;
@@ -34,19 +34,19 @@
     line-height: 27px;
 }
 
-.navi-item:hover {
+.navigation-item:hover {
     padding-bottom: 28px;
     border-bottom: 2px solid #52ae32;
 }
 
-.profile-menu__header {
+.bot-header__right__profile-menu__header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 250px;
     gap: 13px;
 }
-.profile-menu__item {
+.bot-header__right__profile-menu__item {
     display: flex;
     flex-direction: column;
     align-items: center;

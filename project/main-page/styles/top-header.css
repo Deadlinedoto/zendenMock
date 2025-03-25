@@ -9,24 +9,24 @@
     align-items: center;
 }
 
-.left-top__header {
+.top-header__left {
     display: flex;
     gap: 20px;
 }
-.city-select {
+.top-header__left__city-select {
     display: flex;
     gap: 7px;
     color: white;
     font-style: inherit;
 }
-.city-name {
+.top-header__left__city-name {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
     cursor: pointer;
 }
-.navi {
+.top-header__left__navi {
     display: flex;
     gap: 15px;
     font-style: inherit;
@@ -65,7 +65,7 @@
     opacity: .08;
 }
 
-.right-top__header {
+.top__header__right {
     display: flex;
     gap: 10px;
     align-items: center;
