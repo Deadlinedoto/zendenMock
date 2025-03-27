@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #303030;
+}
+.footer-subscribe {
+    display: flex;
+    gap: 250px;
+    width: 73%;
+    height: 250px;
+}
+
+.footer-subscribe_name {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    height: 120px;
+    line-height: 40px;
+    color: #fff;
+}

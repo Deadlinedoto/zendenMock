@@ -1,7 +1,7 @@
-@import url(reset.css);
+@import url(styles/reset.css);
 @import url(styles/header-delivery.css);
 @import url(styles/header-menu.css);
 @import url(styles/main.css);
-
+@import url(styles/footer.css);
 
 
