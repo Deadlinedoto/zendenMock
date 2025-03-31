@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Zenden</title>
@@ -398,16 +398,168 @@
 <footer>
     <div class="footer">
         <div class="footer-subscribe">
-            <h2 class="footer-subscribe_name">Узнай первым о распродажах, акциях и получай специальные промокоды на скидку!</h2>
-            <div class="footer-subscribe_form">
-                <form action="#">
-                    <input class="footer-subscribe_input" type="email">
-                    <button class="footer-subscribe_button" type="submit"></button>
+            <h2 class="footer-subscribe_name">Узнай первым о распродажах, акциях и получай специальные промокоды на
+                скидку!</h2>
+            <div class="footer-subscribe_feedback">
+                <form class="footer-subscribe_form" action="#">
+                    <label for="email">
+                        <input class="footer-subscribe_input" type="email" id="email" placeholder="Электронная почта">
+                    </label>
+                    <button class="footer-subscribe_button" type="submit">Подписаться</button>
                 </form>
-                <div class="footer-subscribe_check">
-                    <input class="footer-subscribe_checkbox" type="checkbox">
-                    Я согласен на обработку персональных данных, а также с условиями подписки
+                <label class="footer-subscribe_check">
+                    <input class="footer-subscribe_checkbox" type="checkbox" id="agreement" checked>
+                    <span>Я согласен на обработку <u>персональных данных</u>, а также с <u>условиями подписки</u></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <nav class="footer_navigation">
+                <div>
+                    <div class="footer_navigation_title">Сервис</div>
+                    <ul>
+                        <li class="footer_navigation-item">
+                            <a href="">Программа лояльности</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Условия продажи</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Гарантия и возврат</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Гарантированный ремонт</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Размерная сетка</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Доставка</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Оплата</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
                 </div>
+                <div>
+                    <div class="footer_navigation_title">Покупателям</div>
+                    <ul>
+                        <li class="footer_navigation-item">
+                            <a href="">Обратная связь</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Акции</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Новости</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Магазины</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer_navigation_title">ZENDEN</div>
+                    <ul>
+                        <li class="footer_navigation-item">
+                            <a href="">О компании</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Тендеры</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Девелоперам</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Вакансии</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="">Карта сайта</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer_contacts">
+                <div class="footer-numbers">
+                    <dl class="footer-numbers_item">
+                        <dt>
+                            <a class="footer-number" href="tel:8 800 600 2202">8 800 600 2202</a>
+                        </dt>
+                        <dd class="footer-number_desc">Интернет-магазин<br> (пн-вс с 09:00 до 21:00 МСК)</dd>
+                    </dl>
+                    <dl class="footer-numbers_item">
+                        <dt>
+                            <a class="footer-number" href="tel:8 495 481 55 55">8 495 481 55 55</a>
+                        </dt>
+                        <dd class="footer-number_desc">Горячая линия<br> (пн-вс с 09:00 до 21:00 МСК)</dd>
+                    </dl>
+                </div>
+                <div class="footer-messengers">
+                    <h1 class="links_title">Оставайся на связи</h1>
+                    <div class="footer-links">
+                        <button class="footer-link_button">
+                            <svg class="footer-link_svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 876 614">
+                                <path fill="white"
+                                      d="M530 339c-16-6-16-29-17-45c-4-57 16-144-8-181c-17-22-99-20-149-17c-14 2-31 5-43 11s-24 16-24 25c0 13 30 11 41 28c12 18 12 57 12 89c0 37-6 86-21 88c-23 1-36-22-48-39c-24-33-48-74-66-114c-9-21-14-44-27-53c-20-14-56-15-91-14c-32 1-78-3-87 16c-7 21 8 41 16 58c41 89 85 167 139 241c50 69 97 124 189 153c26 8 140 31 163 0c8-12 6-39 10-59s9-40 28-41c16-1 25 13 35 23c11 11 20 20 28 30c19 19 39 45 63 55c33 14 84 10 132 8c39-1 67-9 70-32c2-18-18-44-30-59c-30-37-44-48-78-82c-15-15-34-31-34-49c-1-11 8-21 16-32c35-52 70-89 102-143c9-16 30-53 22-71c-9-20-59-14-90-14c-40 0-92-3-102 5c-19 13-27 34-36 54c-20 46-47 93-75 128c-10 12-29 37-40 33z"/>
+                            </svg>
+                        </button>
+                        <button class="footer-link_button">
+                            <svg class="footer-link_svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 24 24">
+                                <path fill="white"
+                                      d="M23 9.71a8.5 8.5 0 0 0-.91-4.13a2.92 2.92 0 0 0-1.72-1A78.36 78.36 0 0 0 12 4.27a78.45 78.45 0 0 0-8.34.3a2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 0 0 0 6.48a9.55 9.55 0 0 0 .3 2a3.14 3.14 0 0 0 .71 1.36a2.86 2.86 0 0 0 1.49.78a45.18 45.18 0 0 0 6.5.33c3.5.05 6.57 0 10.2-.28a2.88 2.88 0 0 0 1.53-.78a2.49 2.49 0 0 0 .61-1a10.58 10.58 0 0 0 .52-3.4c.04-.56.04-3.94.04-4.54ZM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08Z"/>
+                            </svg>
+                        </button>
+                        <button class="footer-link_button">
+                            <svg class="footer-link_svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 272 432">
+                                <path fill="white"
+                                      d="M136 219q-45 0-76.5-32T28 110.5t31.5-76T136 3t76.5 31.5t31.5 76t-31.5 76.5t-76.5 32zm0-161q-22 0-37.5 15.5T83 111t15.5 37.5T136 164t37.5-15.5T189 111t-15.5-37.5T136 58zm124 174q8 15 1 24.5T232 281q-27 17-75 22l81 81q7 7 7 17.5t-7 17.5l-3 3q-8 7-18 7t-17-7q-12-11-64-64l-63 64q-7 7-17.5 7T38 422l-3-3q-7-7-7-17.5t7-17.5l63-63l18-18q-48-4-76-22q-22-15-29-24.5t1-24.5q5-11 16-13.5t29 8.5q14 11 33.5 17t32.5 6l13 1q49 0 79-24q18-11 29-8.5t16 13.5z"/>
+                            </svg>
+                        </button>
+                        <button class="footer-link_button">
+                            <svg class="footer-link_svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 24 24">
+                                <path fill="white"
+                                      d="m21.936 5.17l-3.03 14.185c-.226.999-.806 1.224-1.644.773l-4.545-3.352l-2.225 2.127c-.225.226-.451.452-.967.452l.355-4.675l8.478-7.704c.354-.355-.097-.484-.548-.193l-10.541 6.64l-4.546-1.386c-.999-.322-.999-1 .226-1.45L20.614 3.72c.87-.258 1.612.194 1.322 1.45"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer-qr">
+                    <img class="footer-qr__img" src="./imgs/footer-qr.png" alt="">
+                    <h3 class="footer-qr__title">Скачайте или обновите ранее<br>установленное мобильное<br>приложение по QR-коду</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-payments">
+            <div class="footer-copyright">
+                <div class="footer-copyright_line">©2005-2025 ZENDEN Group. Все права защищены.</div>
+                <div class="footer-copyright_line">Все цены указаны в рублях.</div>
+            </div>
+            <div class="footer-payments_options">
+                <svg data-name="MasterCard 32 #3" xmlns="http://www.w3.org/2000/svg" width="56" height="32" viewBox="0 0 56 32"><rect data-name="Прямоугольник 1012" width="56" height="32" rx="4" fill="#fff"/><path data-name="Контур 237" d="M18.627 27.921v-1.593a.945.945 0 00-1-1.009.982.982 0 00-.892.451.932.932 0 00-.839-.451.839.839 0 00-.743.377v-.313h-.551v2.538h.557v-1.4a.595.595 0 01.621-.674c.366 0 .552.239.552.669v1.412h.557v-1.403a.6.6 0 01.621-.674c.377 0 .557.239.557.669v1.412zm8.248-2.538h-.908v-.77h-.555v.77h-.5v.5h.515v1.168c0 .589.228.94.881.94a1.3 1.3 0 00.69-.2l-.159-.473a1.019 1.019 0 01-.488.143c-.265 0-.366-.17-.366-.425v-1.148h.9zm4.709-.064a.749.749 0 00-.669.372v-.308h-.547v2.538h.552v-1.423c0-.419.181-.653.531-.653a.9.9 0 01.345.064l.17-.531a1.181 1.181 0 00-.393-.069zm-7.12.265a1.9 1.9 0 00-1.035-.265c-.642 0-1.062.308-1.062.812 0 .414.308.669.876.749l.265.037c.3.042.446.122.446.265 0 .2-.2.308-.579.308a1.351 1.351 0 01-.844-.265l-.265.43a1.832 1.832 0 001.1.329c.733 0 1.157-.345 1.157-.828s-.334-.68-.887-.759l-.265-.037c-.239-.032-.43-.08-.43-.25s.181-.3.483-.3a1.635 1.635 0 01.8.218zm14.789-.265a.749.749 0 00-.669.372v-.308h-.547v2.538h.552v-1.423c0-.419.181-.653.531-.653a.9.9 0 01.345.064l.17-.531a1.181 1.181 0 00-.393-.069zm-7.115 1.327a1.282 1.282 0 001.354 1.327 1.327 1.327 0 00.913-.3l-.265-.446a1.115 1.115 0 01-.664.228.815.815 0 010-1.625 1.115 1.115 0 01.664.228l.265-.446a1.327 1.327 0 00-.913-.3 1.282 1.282 0 00-1.354 1.327zm5.171 0v-1.263h-.552v.308a.964.964 0 00-.8-.372 1.327 1.327 0 100 2.655.964.964 0 00.8-.372v.308h.555zm-2.055 0a.762.762 0 11.207.575.767.767 0 01-.205-.574zm-6.662-1.326a1.328 1.328 0 10.037 2.655 1.542 1.542 0 001.054-.345l-.265-.409a1.208 1.208 0 01-.738.265.7.7 0 01-.759-.621h1.885v-.212a1.207 1.207 0 00-1.205-1.327zm0 .494a.629.629 0 01.642.616h-1.322a.653.653 0 01.674-.616zm13.834.839v-2.289h-.531v1.327a.964.964 0 00-.8-.372 1.327 1.327 0 000 2.655.964.964 0 00.8-.372v.308h.531zm-2.041 0a.762.762 0 11.207.575.767.767 0 01-.208-.576zm-18.644 0v-1.27h-.552v.308a.964.964 0 00-.8-.372 1.327 1.327 0 100 2.655.964.964 0 00.8-.372v.308h.552zm-2.055 0a.325.325 0 11-.005 0z" fill="#231f20"/><g data-name="Group"><path data-name="Прямоугольник 116" fill="#ff5f00" d="M24.234 5.893h8.411v15.116h-8.411z"/><path data-name="Path" d="M24.769 13.455a9.6 9.6 0 013.672-7.557 9.614 9.614 0 00-13.5 1.619 9.612 9.612 0 001.619 13.5 9.611 9.611 0 0011.879 0 9.6 9.6 0 01-3.67-7.562z" fill="#eb001b"/><path data-name="Контур 33" d="M43.995 13.456a9.613 9.613 0 01-9.614 9.613 9.614 9.614 0 01-5.941-2.056 9.614 9.614 0 001.619-13.5 9.679 9.679 0 00-1.619-1.618 9.613 9.613 0 0113.5 1.615 9.614 9.614 0 012.055 5.946z" fill="#f79e1b"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="32" viewBox="0 0 56 32"><defs><linearGradient id="a" x1="-61.501" y1="77.878" x2="-61.484" y2="77.878" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#1e5cd8"/><stop offset="1" stop-color="#02afff"/></linearGradient></defs><g data-name="Сгруппировать 2004"><g data-name="AMEX 32 #3"><rect data-name="Прямоугольник 1012" width="56" height="32" rx="4" fill="#fff"/></g><g data-name="Mir Logo"><path data-name="Контур 35" d="M18.312 12.396l-1.411 4.888h-.241l-1.41-4.888a1.94 1.94 0 00-1.865-1.4h-3.384v10.64h3.388v-6.288h.241l1.94 6.288h2.422l1.936-6.288h.241v6.288h3.387v-10.64h-3.383a1.939 1.939 0 00-1.861 1.4zm18.758 9.243h3.409v-3.146h3.43a4.179 4.179 0 003.912-2.44H37.07zm-6.036-9.517l-2.385 5.166h-.241V11H25.02v10.64h2.876a1.941 1.941 0 001.76-1.123l2.378-5.16h.241v6.284h3.388v-10.64h-2.876a1.941 1.941 0 00-1.753 1.121z" fill="#046848"/><path data-name="Контур 36" d="M243.47-38.757a3.728 3.728 0 012.534.989 3.712 3.712 0 011.22 2.756 3.818 3.818 0 01-.063.661h-6.293a4.764 4.764 0 01-4.545-3.325c-.008-.021-.012-.046-.021-.07-.017-.059-.029-.121-.046-.179a4.927 4.927 0 01-.12-.831z" transform="translate(-199.224 49.757)" fill="url(#a)"/></g></g></svg>
+                <svg data-name="Apple Pay 32 #5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="32" viewBox="0 0 56 32"><defs><clipPath id="a"><path data-name="Контур 883" d="M9.621 883.646l-1.116-15.974a2.378 2.378 0 00-2.539-2.212l-19.754 1.256a2.376 2.376 0 00-1.2.426 2.38 2.38 0 00-.808.983l-4.376 8.285a2.388 2.388 0 00-.2 1.133 2.389 2.389 0 00.354 1.094l5.49 7.692a2.379 2.379 0 00.937.861 2.378 2.378 0 001.247.254l19.754-1.257a2.379 2.379 0 002.206-2.541zm-22.371-5.9a1.808 1.808 0 01-.35.612 1.8 1.8 0 01-.557.432 1.8 1.8 0 01-.68.185 1.8 1.8 0 01-1.021-.234 1.805 1.805 0 01-.719-.762 1.807 1.807 0 01-.175-1.034 1.806 1.806 0 01.428-.957 1.806 1.806 0 01.887-.558 1.8 1.8 0 011.047.03 1.805 1.805 0 01.854.607 1.808 1.808 0 01.374.979 1.81 1.81 0 01-.088.697zm18.068-5.216l-7.137 6.084-3.289-1.749-.161-2.381 3.289 1.749 6.2-5.276a7.939 7.939 0 011.098 1.573zm-6.7 12.2a8.276 8.276 0 01-8.84-7.686 8.256 8.256 0 017.68-8.832 8.2 8.2 0 015.316 1.47l-1.524 1.29a6.457 6.457 0 00-3.656-.852 6.377 6.377 0 00-5.9 6.8 6.376 6.376 0 006.8 5.908 6.377 6.377 0 005.9-6.8.713.713 0 00-.007-.088.712.712 0 01-.007-.088l1.689-1.44a8.063 8.063 0 01.231 1.468 8.278 8.278 0 01-7.678 8.847z" transform="translate(33.373 -860.453)" fill="#804e2c" clip-rule="evenodd"/></clipPath><pattern id="b" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 300 300"><image width="300" height="300" xlink:href="data:image/png;base64,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"/></pattern></defs><rect data-name="Прямоугольник 1012" width="56" height="32" rx="4" fill="#fff"/><g data-name="Группа масок 6" clip-path="url(#a)"><path data-name="Изображение 95" transform="translate(13 5)" fill="url(#b)" d="M0 0h30v22H0z"/></g></svg>
+                <svg data-name="Paypal 32 #3" xmlns="http://www.w3.org/2000/svg" width="56" height="32" viewBox="0 0 56 32"><rect data-name="Прямоугольник 1012" width="56" height="32" rx="4" fill="#fff"/><g fill="#8b3ffd"><path data-name="Контур 696" d="M31.348 7a9 9 0 109 9 8.983 8.983 0 00-9-9zm0 12.361A3.361 3.361 0 1134.709 16a3.367 3.367 0 01-3.361 3.361z"/><path data-name="Контур 697" d="M22.348 9.621v13.1H19.1L15 9.621z"/></g></svg>
+                <svg data-name="Visa 32 #3" xmlns="http://www.w3.org/2000/svg" width="56" height="32" viewBox="0 0 56 32"><rect data-name="Прямоугольник 1012" width="56" height="32" rx="4" fill="#fff"/><path d="M28.213 13.835c-.021 1.671 1.489 2.6 2.627 3.158 1.169.569 1.562.934 1.557 1.442-.009.779-.933 1.122-1.8 1.136a6.271 6.271 0 01-3.082-.733l-.543 2.542a9.038 9.038 0 003.34.62c3.152 0 5.215-1.556 5.226-3.969.012-3.062-4.236-3.232-4.207-4.6.01-.415.406-.858 1.274-.97a5.65 5.65 0 012.959.519l.528-2.46a8.044 8.044 0 00-2.808-.52c-2.967 0-5.054 1.577-5.071 3.835m12.95-3.623a1.368 1.368 0 00-1.277.851l-4.5 10.752h3.15l.627-1.732h3.85l.364 1.732h2.776l-2.423-11.6h-2.567m.437 3.132l.912 4.353h-2.49l1.578-4.353m-17.207-3.135l-2.483 11.6h3l2.482-11.6h-3m-4.441 0l-3.123 7.898-1.264-6.716a1.4 1.4 0 00-1.385-1.182H9.071L9 10.549a12.5 12.5 0 012.962.987 1.27 1.27 0 01.713 1.02l2.394 9.26h3.173L23.1 10.212h-3.148" fill="#1a1d76" stroke="rgba(0,0,0,0)"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="32" viewBox="0 0 56 32"><g data-name="Сгруппировать 1981"><g data-name="Google Pay 32 #3"><rect data-name="Прямоугольник 1012" width="56" height="32" rx="4" fill="#fff"/></g><g data-name="Сгруппировать 1980"><path data-name="Контур 884" d="M21.843 7.565l9.966-2.72-.528-1.067a1.4 1.4 0 00-1.881-.634l-8.921 4.421z" fill="#52ae32"/><path data-name="Контур 885" d="M34.901 4.923a1.4 1.4 0 00-.371.051l-2.341.64-7.15 1.949h11.654l-.438-1.606a1.4 1.4 0 00-1.354-1.034z" fill="#bccf05"/><path data-name="Контур 886" d="M38.156 8.548H17.407a1.405 1.405 0 00-1.356 1.04 1.453 1.453 0 00-.051.368v15.632a1.4 1.4 0 001.4 1.4h20.75a1.4 1.4 0 001.4-1.4v-3.916h-8.33a2.388 2.388 0 01-2.386-2.386v-3.122a2.383 2.383 0 012.383-2.383h8.332V9.949a1.4 1.4 0 00-1.393-1.401z" fill="#804e2c"/><path data-name="Вычитание 13" d="M39.594 20.69h-8.367a1.4 1.4 0 01-1.4-1.4v-3.125a1.4 1.4 0 011.4-1.4h8.367a1.431 1.431 0 01.459.074 1.47 1.47 0 01.488.289A1.389 1.389 0 0141 16.165v3.125a1.391 1.391 0 01-.459 1.037 1.405 1.405 0 01-.488.293 1.533 1.533 0 01-.459.07zm-6.1-4.016a1.184 1.184 0 101.182 1.18 1.181 1.181 0 00-1.178-1.18z" fill="#da9429"/></g></g></svg>
+            </div>
+            <div class="footer-copyright_line">
+                <a href=""><u>Политика конфиденциальности</u></a>
             </div>
         </div>
     </div>
