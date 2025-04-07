@@ -83,6 +83,7 @@
     }
 }
 .footer-info {
+    width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -183,4 +184,21 @@
     font-weight: 400;
     line-height: 24px;
     color: #fff;
+}
+
+@media (max-width: 1365px) {
+    .footer-subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-subscribe_name {
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        width: 100%;
+        line-height: 40px;
+        color: #fff;
+    }
+
 }
