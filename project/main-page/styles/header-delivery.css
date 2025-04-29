@@ -111,9 +111,18 @@
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 810px) {
     .header-delivery-menu,
     .header-delivery-menu-list{
         display: none;
+    }
+    .header-delivery {
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+@media (max-width: 767px) {
+    .header-delivery {
+        height: 32px;
     }
 }

@@ -22,8 +22,7 @@
 
 .add-container {
     display: flex;
-    background: url("../imgs/add4.jpg") no-repeat;
-    background-size: cover;
+
 }
 
 .add {
@@ -31,6 +30,8 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    background: url("../imgs/add4.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 
@@ -322,8 +323,8 @@
 
 .promo-image {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 73%;
     gap: 20px;
 }
 .promo-image__item {
@@ -364,21 +365,35 @@
 }
 
 
-@media (max-height: 1630px) {
+@media (max-height: 1629px) {
     .add-container {
-        height: 480px;
+        min-height: 50vh;
+        height: auto;
     }
     .arrow-right {
         display: none;
     }
 }
 @media (max-width: 1600px) {
-    .add-container {
-        max-height: 470px;
+    .add {
+        background-size: cover;
+    }
+    .catalog {
+        margin: 0;
     }
     .categories-container-img {
         width: 360px;
         height: 350px;
+    }
+    .promo-card__preview {
+        width: 70%;
+    }
+    .promo-card__img {
+        width: 100%;
+        height: 80%;
+    }
+    .promo {
+        gap: 0;
     }
 
     .catalog-list-item_img {
@@ -399,10 +414,16 @@
     .catalog-list-item_percent-sale {
         bottom: 400px;
     }
+    .promo-image {
+        width: 70%;
+    }
 }
 @media (max-width: 1365px) {
     .add-container {
         max-height: 430px;
+    }
+    .catalog {
+        margin: 0;
     }
     .categories {
         justify-content: space-between;
@@ -425,8 +446,8 @@
         margin-left: 0;
     }
     .promo-card__preview {
-        padding: 0 24px;
-        gap: 10px;
+        justify-content: space-between;
+        width: 95%;
     }
     .promo-card__link {
         width: 100%;
@@ -436,8 +457,11 @@
         display: none;
     }
     .promo-image {
-        width: 100%;
+        width: 95%;
         gap: 10px;
+    }
+    .promo {
+        gap: 20px;
     }
 
 }
@@ -479,10 +503,25 @@
     .add {
         justify-content: center;
     }
+    .promo-image {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .hype-img {
+        max-width: 465px;
+        max-height: 510px;
+        width: 100%;
+        height: 100%;
+    }
+    .promo-image__item {
+        width: 49%;
+        flex-basis: 49%;
+    }
     .categories {
         flex-wrap: wrap;
         gap: 15px;
-        flex: 0 0 calc(50% - 15px); /* Ширина элемента */
+        flex: 0 0 calc(50% - 15px);
     }
     .categories-container {
         width: 100%;
@@ -497,8 +536,76 @@
     }
 
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .displnone767 {
         display: none;
     }
+    .bonus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 56px;
+        background: #52ae32;
+    }
+    .bonus-img {
+        margin: 0;
+    }
+    .promo {
+        gap: 50px;
+    }
+    .promo-image {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .no-image-767 {
+        display: none;
+    }
+    .promo-image__item {
+        flex-basis: 48%;
+
+    }
+    .promo-image__item-name {
+        font-size: 20px;
+    }
+    .promo-image__item-description {
+        font-size: 14px;
+    }
+    .hype-img {
+        width: 100%;
+        max-width: 100%;
+    }
 }
+
+@media (max-width: 600px) {
+    .bonus-close_btn {
+        position: absolute;
+        right: 0;
+    }
+    .bonus-img {
+        overflow: hidden;
+    }
+    .add {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        background: url("../imgs/add4.jpg") no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .top-sales {
+        font-size: 24px;
+    }
+    .catalog-list-item_buy {
+        left: 100px;
+    }
+    .catalog-list-item_img {
+        height: 160px;
+        width: 160px;
+    }
+    .catalog-list-item_percent-sale {
+        bottom: 350px;
+    }
+}
+

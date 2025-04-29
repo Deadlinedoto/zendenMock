@@ -35,8 +35,8 @@
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    min-width: 320px;
-    min-height: 50px;
+    width: 320px;
+    height: 50px;
     border: none;
     border-radius: 30px;
     padding-left: 20px;
@@ -83,11 +83,10 @@
     }
 }
 .footer-info {
-    width: 100%;
+    width: 73%;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
-    gap: 130px;
+    justify-content: space-between;
 }
 
 .footer_navigation {
@@ -140,7 +139,7 @@
     font-weight: 400;
     line-height: 28px;
     color: white;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 .footer-links {
     display: flex;
@@ -172,6 +171,9 @@
     line-height: 24px;
     color: #f2f2f2;
 }
+.footer-mobile {
+    display: none;
+}
 .footer-payments {
     display: flex;
     flex-direction: row;
@@ -185,12 +187,44 @@
     line-height: 24px;
     color: #fff;
 }
+@media (max-width: 1630px) {
+    .footer-info {
+        width: 78%;
+    }
+    .footer_navigation {
+        gap: 100px;
+    }
+    .footer-payments {
+        width: 80%;
+    }
 
+}
+@media (max-width: 1600px) {
+    .footer-subscribe {
+        justify-content: center;
+        gap: 100px;
+    }
+    .footer-info {
+        width: 70%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer_navigation {
+        gap: 100px;
+    }
+    .footer-payments {
+        width: 70%;
+    }
+}
 @media (max-width: 1365px) {
     .footer-subscribe {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         gap: 15px;
+        width: 95%;
     }
     .footer-subscribe_name {
         font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -200,5 +234,133 @@
         line-height: 40px;
         color: #fff;
     }
+    .footer-info {
+        flex-direction: column;
+        width: 93%;
+        gap: 40px;
+    }
+    .footer_navigation {
+        justify-content: space-between;
+    }
+    .footer-subscribe_check {
+        justify-content: flex-start;
+    }
+    .footer_contacts-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer_contacts {
+    }
+    .links_title {
+        margin-top: 100px;
+    }
+    .footer-qr {
+        margin: 0;
+    }
+    .footer-payments {
+        flex-direction: column;
+        gap: 30px;
+        width: 93%;
+    }
+}
 
+@media (max-width: 768px) {
+    .footer-subscribe {
+        padding: 24px;
+        width: 90%;
+        border: none;
+    }
+    .footer-subscribe_check {
+        margin: 0;
+    }
+    .footer-subscribe_name {
+        font-size: 24px;
+    }
+    .footer-subscribe_form {
+        flex-direction: column;
+    }
+    .footer-subscribe_button {
+        width: 140px;
+        height: 50px;
+    }
+    .footer-info {
+        width: 90%;
+    }
+    .footer_navigation {
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer_navigation-item {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .footer_navigation_title {
+        margin: 0;
+        padding-bottom: 24px;
+        padding-top: 24px;
+    }
+    .footer-numbers {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-qr {
+        display: none;
+    }
+    .footer-payments {
+        width: 90%;
+    }
+    .footer-mobile {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-mobile_download {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .footer-mobile_title {
+        padding-top: 60px;
+        padding-bottom: 16px;
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #fff;
+    }
+    .footer-mobile_download-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 8px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .footer-mobile {
+        justify-content: center;
+    }
+    .footer-mobile_download {
+        flex-direction: column;
+    }
+
+    .footer-mobile_download-item {
+    }
+}
+@media (max-width: 450px) {
+    .footer-subscribe_input {
+        width: 250px;
+    }
+    .footer-subscribe {
+        padding: 20px;
+    }
+    .footer-subscribe_name {
+        line-height: 35px;
+        font-size: 20px;
+    }
 }

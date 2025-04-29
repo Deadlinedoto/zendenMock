@@ -101,12 +101,21 @@
         height: 22px;
     }
 }
+@media (max-width: 810px) {
+    .header-menu {
+        height: 48px;
+        gap: 0;
+    }
 
-
-
-
-
-
+    .header-menu-profile {
+        display: flex;
+        gap: 10px;
+    }
+    .zenden-logo {
+        height: 40px;
+        width: 110px;
+    }
+}
 
 
 
