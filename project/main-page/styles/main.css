@@ -30,7 +30,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    background: url("../imgs/add4.jpg") no-repeat center center;
+    background: url("../../imgs/add4.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -107,6 +107,11 @@
 .catalog {
     height: 1000px;
     margin-bottom: 100px;
+}
+.catalog-list-item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Наследует цвет текста */
 }
 .catalog-menu {
     display: flex;
@@ -590,7 +595,7 @@
         flex: 1;
         justify-content: center;
         align-items: center;
-        background: url("../imgs/add4.jpg") no-repeat center center;
+        background: url("../../imgs/add4.jpg") no-repeat center center;
         background-size: cover;
         overflow: hidden;
     }

@@ -1,0 +1,122 @@
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #303030;
+    height: 80px;
+    gap: 65px;
+}
+.header-menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.zenden-logo {
+    height: 80px;
+    width: 150px;
+
+}
+.navi-icon {
+    display: none;
+    height: 25px;
+    width: 25px;
+}
+
+.header-menu-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.header-menu-navigation_item:hover {
+    padding-bottom: 28px;
+    border-bottom: 2px solid #52ae32;
+}
+.header-menu-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    gap: 13px;
+}
+.header-menu-profile_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.profile-menu-name {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: white;
+    white-space: nowrap;
+}
+.profile-menu-svg {
+    width: 19px;
+    height: 19px;
+}
+
+@media (max-width: 1630px) {
+    .header-menu {
+        padding: 0 110px;
+    }
+}
+@media (max-width: 1600px) {
+    .header-menu {
+        padding: 0 240px;
+    }
+    .header-menu-profile {
+        margin-left: 0;
+    }
+    
+}
+@media (max-width: 1365px) {
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    .navi-icon {
+        display: block;
+    }
+    .header-menu-navigation {
+        display: none;
+    }
+    .profile-menu-name {
+        display: none;
+    }
+    .header-menu-profile {
+        gap: 25px;
+    }
+    .profile-menu-svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+@media (max-width: 810px) {
+    .header-menu {
+        height: 48px;
+        gap: 0;
+    }
+
+    .header-menu-profile {
+        display: flex;
+        gap: 10px;
+    }
+    .zenden-logo {
+        height: 40px;
+        width: 110px;
+    }
+}
+
+
+
+

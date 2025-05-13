@@ -2,14 +2,12 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <title>Card Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenden</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-
 </head>
 <body>
-
 <header>
     <div class="header-delivery">
         <div class="header-info">
@@ -53,7 +51,7 @@
                  viewBox="0 0 50 50">
                 <path fill="white" d="M10 12h30v4H10zm0 10h30v4H10zm0 10h30v4H10z"/>
             </svg>
-            <a class='zenden-logo' href="">
+            <a class='zenden-logo' href="../main-page/index.html">
                 <img class='zenden-logo' src="../svg/zenden-logo.svg" alt="">
             </a>
         </div>
@@ -129,7 +127,6 @@
         </div>
     </div>
 </header>
-
 <main>
     <div class="bonus">
         <img class="bonus-img" src="../imgs/header-bonuses.png" alt="">
@@ -140,300 +137,174 @@
             </svg>
         </button>
     </div>
-    <div class="add-container">
-        <div class="add">
-            <button class="add-btn">
-                <svg class="add-btn_svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                     viewBox="0 0 48 48">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="4"
-                          d="M31 36L19 24l12-12"/>
-                </svg>
-            </button>
-            <div class="add-swapper-pagination">
-                <span class="add-swapper-pagination__item"></span>
-                <span class="add-swapper-pagination__item"></span>
-                <span class="add-swapper-pagination__item"></span>
-                <span class="add-swapper-pagination__item"></span>
-            </div>
-            <button class="add-btn">
-                <svg class="add-btn_svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                     viewBox="0 0 48 48">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="4"
-                          d="m19 12l12 12l-12 12"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="categories">
-        <div class="categories-container">
-            <img class="categories-container-img" src="../imgs/woman-main.jpg" alt="">
-            <div class="categories-container-name">Женщинам</div>
-        </div>
-        <div class="categories-container">
-            <img class="categories-container-img" src="../imgs/man-main.jpg" alt="">
-            <div class="categories-container-name">Мужчинам</div>
-        </div>
-        <div class="categories-container">
-            <img class="categories-container-img" src="../imgs/kids-main.jpg" alt="">
-            <div class="categories-container-name">Детям</div>
-        </div>
-    </div>
-    <div class="catalog">
-        <div class="catalog-menu">
-            <div class="catalog-menu-item">
-                <svg class="catalog-menu-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                     viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                          d="M19.745 10.5a1.41 1.41 0 0 1-.26.66l-7.94 10.73a.94.94 0 0 1-.53.35a.827.827 0 0 1-.22 0a1.099 1.099 0 0 1-.4-.08a1 1 0 0 1-.55-1l.8-6.21h-5.13a1.41 1.41 0 0 1-.7-.22a1.33 1.33 0 0 1-.46-.56a1.45 1.45 0 0 1-.1-.69c.03-.236.12-.46.26-.65l7.94-10.71a.93.93 0 0 1 .51-.34a1 1 0 0 1 .63.06a.94.94 0 0 1 .44.42a1 1 0 0 1 .11.55l-.8 6.21h5.14a1.16 1.16 0 0 1 .7.22c.194.141.35.33.45.55c.096.223.134.467.11.71"/>
-                </svg>
-                <a>Бестселлеры</a>
-            </div>
-            <div class="catalog-menu-item">
-                <svg class="catalog-menu-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                     viewBox="0 0 16 16">
-                    <path fill="currentColor"
-                          d="M12.9 15.4L8 12.8l-4.9 2.6L4 10L0 6.1l5.5-.8l2.4-5l2.4 5l5.5.8L12 10l.9 5.4z"/>
-                </svg>
-                <a>Новинки</a>
+    <nav class="breadcrumbs">
+        <a href="#">Женщинам</a>
+        <span>•</span>
+        <a href="#">Кроссовки</a>
+        <span>•</span>
+        <h5> Арт. 219-42WA-022TT</h5>
+    </nav>
+    <div class="view-item">
+        <div class="view-item__gallery">
+            <!-- Галерея изображений -->
+            <div class="gallery-thumbnails">
+                <img class="active" src="../imgs/item1-5.jpg" alt="thumb1">
+                <img src="../imgs/item1-2.jpg" alt="thumb2">
+                <img src="../imgs/item1-3.jpg" alt="thumb3">
+                <img src="../imgs/item1-4.jpg" alt="thumb4">
+                <img src="../imgs/item1.jpg" alt="thumb5">
             </div>
         </div>
-        <ul class="catalog-list">
-            <li class="catalog-list-item">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                    <img class="catalog-list-item_img" src="../imgs/catalog1.jpg" alt="">
-                    <a class="catalog-list-item_title" href="../card-item/index.html">Кроссовки INSTREET</a>
-                    <h3 class="catalog-list-item_price">2 300 ₽</h3>
-                    <s class="catalog-list-item_full-price">3 300 ₽</s>
-                    <h3 class="catalog-list-item_size">39 40 41</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-27%</span>
-            </li>
-            <li class="catalog-list-item">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog2.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Рюкзак женский INSTREET</a>
-                <h3 class="catalog-list-item_price">500 ₽</h3>
-                <s class="catalog-list-item_full-price">1 500 ₽</s>
-                <h3 class="catalog-list-item_size">ONE SIZE</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-13%</span>
-            </li>
-            <li class="catalog-list-item displnone767">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog3.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Лоферы тикток NoName</a>
-                <h3 class="catalog-list-item_price">1 200 ₽</h3>
-                <s class="catalog-list-item_full-price">2 200 ₽</s>
-                <h3 class="catalog-list-item_size">43 44 45</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-53%</span>
-            </li>
-            <li class="catalog-list-item displnone767">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog4.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Тапочки женские Despasita</a>
-                <h3 class="catalog-list-item_price">800 ₽</h3>
-                <s class="catalog-list-item_full-price">1800 ₽</s>
-                <h3 class="catalog-list-item_size">37 38 39</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-13%</span>
-            </li>
-            <li class="catalog-list-item displnone">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog5.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Шлепанцы женские Relative</a>
-                <h3 class="catalog-list-item_price"> 5 400 ₽</h3>
-                <s class="catalog-list-item_full-price"> 15 400 ₽</s>
-                <h3 class="catalog-list-item_size">36 37 39</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-67%</span>
-            </li>
-        </ul>
-        <button class="arrow-right">
-            <svg class="add-btn_svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                 viewBox="0 0 48 48">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
-                      d="m19 12l12 12l-12 12"/>
-            </svg>
-        </button>
-
-        <h1 class="top-sales">Лидеры продаж со скидками</h1>
-        <ul class="catalog-list">
-            <li class="catalog-list-item">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog1.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Кроссовки INSTREET</a>
-                <h3 class="catalog-list-item_price">2 300 ₽</h3>
-                <s class="catalog-list-item_full-price">3 300 ₽</s>
-                <h3 class="catalog-list-item_size">39 40 41</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-27%</span>
-            </li>
-            <li class="catalog-list-item">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog2.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Рюкзак женский INSTREET</a>
-                <h3 class="catalog-list-item_price">500 ₽</h3>
-                <s class="catalog-list-item_full-price">1 500 ₽</s>
-                <h3 class="catalog-list-item_size">ONE SIZE</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-13%</span>
-            </li>
-            <li class="catalog-list-item displnone767">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog3.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Лоферы тикток NoName</a>
-                <h3 class="catalog-list-item_price">1 200 ₽</h3>
-                <s class="catalog-list-item_full-price">2 200 ₽</s>
-                <h3 class="catalog-list-item_size">43 44 45</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-53%</span>
-            </li>
-            <li class="catalog-list-item displnone767">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog4.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Тапочки женские Despasita</a>
-                <h3 class="catalog-list-item_price">800 ₽</h3>
-                <s class="catalog-list-item_full-price">1800 ₽</s>
-                <h3 class="catalog-list-item_size">37 38 39</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-13%</span>
-            </li>
-            <li class="catalog-list-item displnone">
-                <a class="catalog-list-item-link" href="../card-item/index.html">
-                <img class="catalog-list-item_img" src="../imgs/catalog5.jpg" alt="">
-                <a class="catalog-list-item_title" href="">Шлепанцы женские Relative</a>
-                <h3 class="catalog-list-item_price"> 5 400 ₽</h3>
-                <s class="catalog-list-item_full-price"> 15 400 ₽</s>
-                <h3 class="catalog-list-item_size">36 37 39</h3>
-                </a>
-                <a class="catalog-list-item_buy">
-                    <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
-                         viewBox="0 0 42 42">
-                        <path fill="white"
-                              d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
-                    </svg>
-                </a>
-                <span class="catalog-list-item_percent-sale">-67%</span>
-            </li>
-        </ul>
-    </div>
-    <div class="promo">
-        <div class="promo-card__preview">
-            <a class="promo-card__link" href="">
-                <div class="darken-layer">
-                    <img class="promo-card__img" src="../imgs/promo-card1.jpg" alt="">
-                </div>
-            </a>
-            <a class="promo-card__link no-image-767" href="">
-                <div class="darken-layer">
-                    <img class="promo-card__img" src="../imgs/promo-card2.jpg" alt="">
-                </div>
-            </a>
-            <a class="promo-card__link no-image" href="">
-                <div class="darken-layer">
-                    <img class="promo-card__img" src="../imgs/promo-card3.jpg" alt="">
-                </div>
-            </a>
+        <div class="gallery-main">
+            <img src="../imgs/item1-5.jpg" alt="main shoe">
         </div>
-        <div class="promo-image">
-            <a href="" class="promo-image__item">
-                <div class="hype-img_container">
-                    <img class="hype-img" src="../imgs/hype1.jpg" alt="">
+        <div class="view-item__info">
+            <!-- Информация о товаре -->
+            <h3 class="item__brand">Pulse</h3>
+            <h1 class="item__name">Кроссовки женские</h1>
+            <div class="item__price-block">
+                <div class="price-block__menu">
+                    <del class="price-block__old-price">3 999 ₽</del>
+                    <span class="price-block__discount">-50%</span>
+                    <span class="price-block__viewers">Сейчас смотрят 8 чел.</span>
                 </div>
-                <h3 class="promo-image__item-name">Акции ZENDEN</h3>
-                <h3 class="promo-image__item-description">Акции и специальные предложения</h3>
-            </a>
-            <a href="" class="promo-image__item">
-                <div class="hype-img_container">
-                    <img class="hype-img" src="../imgs/hype2.jpg" alt="">
+                <span class="main-price">1 999 ₽</span>
+                <div class="economy">Ваша экономия 2000 руб.</div>
+            </div>
+            <div class="colors">
+                <span class="colors-name">Доступные цвета</span>
+                <div class="available-colors">
+                    <img src="../imgs/item1-color-2.jpg" alt="color1" class="active">
+                    <img src="../imgs/item1-color-1.jpg" alt="color2">
                 </div>
-                <h3 class="promo-image__item-name">Модная одежда</h3>
-                <h3 class="promo-image__item-description">Стильные образы на каждый день</h3>
-            </a>
-            <a href="" class="promo-image__item">
-                <div class="hype-img_container">
-                    <img class="hype-img" src="../imgs/hype3.jpg" alt="">
+            </div>
+            <div class="sizes">
+                <div class="sizes_name">
+                    <span>Выберите размер:</span>
+                    <a href="#">Таблица размеров</a>
                 </div>
-                <h3 class="promo-image__item-name">Стильные аксессуары</h3>
-                <h3 class="promo-image__item-description">Для идеального завершения ваших образов</h3>
-            </a>
-            <a href="" class="promo-image__item">
-                <div class="hype-img_container">
-                    <img class="hype-img" src="../imgs/hype4.jpg" alt="">
+                <div class="sizes-choose">
+                    <button>36</button>
+                    <button>37</button>
+                    <button>38</button>
+                    <button>39</button>
+                    <button>40</button>
+                    <button>41</button>
                 </div>
-                <h3 class="promo-image__item-name">OUTLET</h3>
-                <h3 class="promo-image__item-description">Последний шанс купить товары со скидкой до 80%</h3>
-            </a>
+            </div>
+            <button class="add-to-cart">Добавить в корзину</button>
+            <div class="delivery-info">
+                <h3>Способы получения товара</h3>
+                <div class="delivery-info__your-city">
+                    <svg class="geo-svg" xmlns="http://www.w3.org/2000/svg" width="auto" height="auto"
+                         viewBox="0 0 48 48">
+                        <path fill="#303030" fill-rule="evenodd"
+                              d="M23.424 41.817L24 41l-.576.817Zm1.152 0l.004-.002l.01-.007l.03-.023l.118-.085c.1-.074.246-.182.43-.324c.368-.282.89-.697 1.513-1.23a43.403 43.403 0 0 0 4.575-4.54C34.564 31.78 38 26.319 38 20.076c0-3.73-1.474-7.31-4.098-9.95A13.962 13.962 0 0 0 24 6a13.962 13.962 0 0 0-9.902 4.125A14.117 14.117 0 0 0 10 20.077c0 6.242 3.436 11.703 6.744 15.529a43.403 43.403 0 0 0 4.575 4.54c.624.533 1.145.948 1.513 1.23a25.536 25.536 0 0 0 .547.41l.032.022l.009.007l.004.002c.345.243.807.243 1.152 0ZM24 41l.576.817L24 41Zm5-21a5 5 0 1 1-10 0a5 5 0 0 1 10 0Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h6>Ваш город: Москва</h6>
+                </div>
+            </div>
+            <div class="delivery-info__list">
+                <button class="delivery-info__item no-border">
+                    <span><a>Самовывоз </a>из 1 магазина сегодня</span>
+                    <svg class="svg-next" xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                         viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-width="2" d="m7 2l10 10L7 22"/>
+                    </svg>
+                </button>
+                <button class="border-top">ПВЗ - недоступно</button>
+                <button class="border-top">Доставка - недоступно</button>
+            </div>
+        </div>
+    </div>
+    <div class="about-menu">
+        <div class="about-menu__list">
+            <a>О товаре</a>
+            <a>Наличие в магазинах<span>1</span></a>
+            <a>Отзывы<span>6</span></a>
+        </div>
+    </div>
+    <div class="about">
+        <h1>Информация о товаре</h1>
+        <div class="about-list">
+            <table class="about-list__table">
+                <tr>
+                    <th>Полное название</th>
+                    <td>Кроссовки женские Pulse 219-42WA-022TT</td>
+                </tr>
+                <tr>
+                    <th>Артикул</th>
+                    <td>219-42WA-022TT</td>
+                </tr>
+                <tr>
+                    <th>Бренд</th>
+                    <td>Pulse</td>
+                </tr>
+                <tr>
+                    <th>Сезон</th>
+                    <td>Всесезонная</td>
+                </tr>
+                <tr>
+                    <th>Цвет</th>
+                    <td>Белый</td>
+                </tr>
+                <tr>
+                    <th>Пол</th>
+                    <td>Женщины</td>
+                </tr>
+                <tr>
+                    <th>Высота каблука (мм)</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>Высота верха обуви (мм)</th>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <th>Материал верха основной</th>
+                    <td>Текстиль</td>
+                </tr>
+                <tr>
+                    <th>Материал верха дополнительный</th>
+                    <td>Искусственная кожа</td>
+                </tr>
+                <tr>
+                    <th>Материал подкладки основной</th>
+                    <td>Текстиль</td>
+                </tr>
+                <tr>
+                    <th>Материал подошвы</th>
+                    <td>ЭВА</td>
+                </tr>
+                <tr>
+                    <th>Материал стельки</th>
+                    <td>Текстиль</td>
+                </tr>
+                <tr>
+                    <th>Тип застежки</th>
+                    <td>Шнурки</td>
+                </tr>
+                <tr>
+                    <th>Регион производства</th>
+                    <td>Китай</td>
+                </tr>
+                <tr>
+                    <th>Полнота</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>Будут интересны</th>
+                    <td>Белые кожаные кроссовки, Белые кроссовки, Кроссовки для зала, Кроссовки на толстой подошве, Кроссовки носки, Летние кроссовки, Массивные кроссовки, Распродажа, Тканевые кроссовки, Кроссовки женские Pulse, Босоножки на высокой подошве, Босоножки на каблуке с ремешком, Ботильоны на низком каблуке, Ботильоны на шнурках, Зимние ботинки на шнуровке, Высокие зимние ботинки, Кроссовки дышащие, Весенняя обувь, Обувь больших размеров, Обувь из текстиля, Ботинки 41 размера, Ботинки больших размеров, Ботинки со шнуровкой, Зимние высокие ботинки, Высокие зимние сапоги, Высокие сапоги на шнуровке, Дышащие кроссовки, Зимние сапоги на полную ногу, Кожаные ботинки на шнурках, Кроссовки под платье, Кроссовки с сеткой, Летние дышащие кроссовки, Летние лоферы, Лоферы на высокой подошве, Лоферы на тракторной подошве, Осенние сапоги на низком каблуке, Серые кроссовки, Сандалии на толстой подошве, Сапоги на шнуровке на каблуке, Туфли на шнуровке, Короткие зимние ботинки, Лоферы на узкую ногу, Полуботинки на шнуровке, Полуботинки на шнуровке весенние, Босоножки с квадратным носом, Черные ботильоны на шнуровке</td>
+                </tr>
+            </table>
+            <div class="about-brand">
+                <h2>Бренд Pulse</h2>
+                <p>Бренд Pulse создает кроссовки, одежду и аксессуары для тех, кто живет в движении, стремится к самовыражению и не боится экспериментов! Каждая модель производится с учетом последних трендов и применением новейших технологий. Держим руку на пульсе трендов, чтобы вы могли исследовать новое вместе с нами!</p>
+            </div>
         </div>
     </div>
 </main>
-
 <footer>
     <div class="footer">
         <div class="footer-subscribe">
@@ -777,6 +648,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

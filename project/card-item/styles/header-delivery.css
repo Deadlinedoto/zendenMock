@@ -1,0 +1,128 @@
+.header-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #525252;
+    height: 40px;
+    gap: 950px;
+
+}
+.header-info {
+    display: flex;
+    gap: 20px;
+}
+
+.header-delivery-city {
+    display: flex;
+    gap: 7px;
+    color: white;
+    font-style: inherit;
+    cursor: pointer;
+}
+
+.header-delivery-name {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header-delivery-menu {
+    display: flex;
+    padding-top: 1px;
+    gap: 20px;
+}
+.header-delivery-menu-list {
+    display: flex;
+    gap: 15px;
+    font-style: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    align-items: center;
+}
+.geo-svg {
+    height: 17px;
+    width: 17px;
+}
+.menu-select {
+    cursor: pointer;
+    padding-left: 5px;
+    position: relative;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.menu-select__no-br {
+    cursor: pointer;
+    padding-left: 5px;
+    position: relative;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.menu-select::before {
+    cursor: default;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -12px;
+    width: 1px;
+    height: 12px;
+    background-color: #fff;
+    opacity: .08;
+}
+
+.header-delivery-phone {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+.phone-svg {
+    height: 13px;
+    width: 13px;
+}
+@media (max-width: 1630px) {
+    .header-delivery {
+    }
+}
+@media (max-width: 1600px) {
+    .header-delivery {
+        justify-content: center;
+        gap: 700px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .header-delivery {
+        justify-content: space-between;
+        gap: 300px;
+        padding: 0 28px;
+
+    }
+}
+
+@media (max-width: 810px) {
+    .header-delivery-menu,
+    .header-delivery-menu-list{
+        display: none;
+    }
+    .header-delivery {
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+@media (max-width: 767px) {
+    .header-delivery {
+        height: 32px;
+    }
+}
