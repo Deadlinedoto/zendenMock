@@ -30,7 +30,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    background: url("../../imgs/add4.jpg") no-repeat center center;
+    background: url("../imgs/add4.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -595,7 +595,7 @@
         flex: 1;
         justify-content: center;
         align-items: center;
-        background: url("../../imgs/add4.jpg") no-repeat center center;
+        background: url("../imgs/add4.jpg") no-repeat center center;
         background-size: cover;
         overflow: hidden;
     }
