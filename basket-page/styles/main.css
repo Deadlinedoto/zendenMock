@@ -1,0 +1,182 @@
+main {
+    background: #f2f2f2;
+}
+.basket-header {
+    padding: 32px 0;
+    width: 100%;
+}
+.breadcrumbs {
+     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     margin: 0 auto 0 auto;
+     width: 1408px;
+     font-size: 11px;
+     font-weight: 500;
+     color: #303030;
+     padding-bottom: 28px;
+     background: #f2f2f2;
+}
+
+.basket__title {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 30px;
+    width: 1408px;
+    margin: 0 auto 0 auto;
+    font-weight: 600;
+    color: #303030;
+}
+
+.basket {
+    width: 1408px;
+    margin: 0 auto 0 auto;
+}
+.basket-list {
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+}
+.basket-list__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: calc(72px - 48px);
+    padding: 24px;
+    background: #ffffff;
+    margin: 0 0 8px;
+}
+.basket-list__header label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+}
+.basket-list-card {
+    height: calc(144px - 48px);
+    padding: 24px;
+    background: #ffffff;
+}
+.basket-subscribe_checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+    &:checked {
+        background-color: #52ae32;
+        border: none;
+        &::before {
+            content: "✓";
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.basket-list__header-select-all {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.basket-delete-select {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #52ae32;
+}
+.basket-delete-select:hover {
+    color: #bccf05;
+    cursor: pointer;
+}
+.basket-list-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+.basket-list-card__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 548px;
+}
+.basket-delete_number {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #c7c7c7;
+}
+
+.basket-list-card__item-link img{
+    height: 96px;
+    width: 96px;
+}
+.basket-list-card__item-title {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #303030;
+    margin: 0 0 8px;
+}
+.basket-list-card__item-details {
+    display: flex;
+    flex-direction: column;
+}
+.basket-list-card-line {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.basket-list-card-line__item {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.num-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    border: 1px solid #f2f2f2;
+    border-radius: 9999px;
+}
+.num-form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #ffffff;
+    border-radius: 9999px;
+}
+.num-form__svg {
+    display: flex;
+    width: 17px;
+    height: 17px;
+    color: #303030;
+}
+.num-form__input {
+    text-align: center;
+    width: 32px;
+    height: 24px;
+    border: none;
+    background: #ffffff;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
