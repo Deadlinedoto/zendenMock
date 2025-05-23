@@ -178,8 +178,8 @@
                     <div class="basket-list-card-controls__quantity">
                         <form class="basket-list-card-controls__quantity-form">
                             <div class="num-form">
-                                <button class="num-form__button">
-                                    <svg class="num-form__svg" width="48" height="48" viewBox="0 0 304 384"
+                                <button class="num-form__button button-minus" type="button">
+                                    <svg class="num-form__svg-minus" width="48" height="48" viewBox="0 0 304 384"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0" y="0" width="304" height="384" rx="8" fill="none"/>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 384" fill="#000000"
@@ -189,10 +189,10 @@
                                     </svg>
                                 </button>
                                 <label class="num-form__label">
-                                    <input class="num-form__input" type="text" value="1"
+                                    <input class="num-form__input" type="number" min="1" max="10" step="1" value="1"
                                            readonly>
                                 </label>
-                                <button class="num-form__button">
+                                <button class="num-form__button button-plus" type="button">
                                     <svg class="num-form__svg" width="48" height="48" viewBox="0 0 304 384"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0" y="0" width="304" height="384" rx="8" fill="none"/>
@@ -206,12 +206,182 @@
                             </div>
                         </form>
                     </div>
-                    <div class="basket-list-card-controls__price"></div>
-                    <div class="basket-list-card-controls__actions"></div>
+                    <div class="basket-list-card-controls__price">
+                        <div class="basket-price__extras">
+                            <span class="basket-price__extras-item">
+                                <span class="basket-price__extras-sale">−63%</span>
+                            </span>
+                            <del class="basket-price__extras-old">3&nbsp;999р</del>
+                        </div>
+                        <div class="basket-price__current">1&nbsp;499р</div>
+                    </div>
+                    <div class="basket-list-card-controls__actions">
+                        <div class="basket-list-card-controls__action-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.001 3.818a6.228 6.228 0 0 1 8.51 9.087l-5.224 5.225h-.001L12 21.415l-7.28-7.279l-1.23-1.232c-.001 0 0 0 0 0A6.228 6.228 0 0 1 12 3.818Zm3.285 11.485l3.811-3.812a4.228 4.228 0 1 0-5.98-5.98L12 6.627L10.883 5.51a4.228 4.228 0 1 0-5.98 5.98l1.232 1.232L12 18.587l3.285-3.285Z"/>
+                            </svg>
+                        </div>
+                        <div class="basket-list-card-controls__action-svg">
+                            <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0" y="0" width="24" height="24" rx="8" fill="white"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" x="0" y="0"
+                                     width="24" height="24">
+                                    <path fill="white" stroke="currentColor" stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-width="1.5"
+                                          d="m19.5 5.5l-.62 10.025c-.158 2.561-.237 3.842-.88 4.763a4 4 0 0 1-1.2 1.128c-.957.584-2.24.584-4.806.584c-2.57 0-3.855 0-4.814-.585a4 4 0 0 1-1.2-1.13c-.642-.922-.72-2.205-.874-4.77L4.5 5.5M3 5.5h18m-4.944 0l-.683-1.408c-.453-.936-.68-1.403-1.071-1.695a2 2 0 0 0-.275-.172C13.594 2 13.074 2 12.035 2c-1.066 0-1.599 0-2.04.234a2 2 0 0 0-.278.18c-.395.303-.616.788-1.058 1.757L8.053 5.5"
+                                          color="currentColor"/>
+                                </svg>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="basket-check-summary"></div>
+        <div class="basket-check-summary">
+            <div class="checkout-summary__main">
+                <dl class="justify-line">
+                    <dt class="justify-line__title">1 товар</dt>
+                    <dt class="justify-line__desc dark-grey">3&nbsp;999 ₽</dt>
+                </dl>
+                <dl class="justify-line">
+                    <dt class="justify-line__title">Акции и скидки</dt>
+                    <dt class="justify-line__desc red">−2&nbsp;500 ₽</dt>
+                </dl>
+            </div>
+            <div class="checkout-summary__total">
+                <dl class="justify-line justify-line-large">
+                    <dt class="justify-line__title strong">Итого</dt>
+                    <dt class="justify-line__desc strong dark-grey">1&nbsp;499 ₽</dt>
+                </dl>
+            </div>
+            <div class="checkout-summary__notification">
+                <div class="checkout-summary__notification-inner">
+                    <div class="notification-inner__svg">
+                        <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="0" width="24" height="24" rx="12" fill="none"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" x="0" y="0"
+                                 width="24" height="24">
+                                <g fill="none">
+                                    <circle cx="12" cy="12" r="9.25" stroke="#000000" stroke-width="1.5"/>
+                                    <path stroke="#000000" stroke-linecap="round" stroke-width="1.5" d="M12 11.813v5"/>
+                                    <circle cx="12" cy="8.438" r="1.25" fill="#000000"/>
+                                </g>
+                            </svg>
+                        </svg>
+                    </div>
+                    <div class="notification-inner__text">Оформление заказа доступно только авторизированным
+                        пользователям
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-summary__action">
+                <a class="checkout-summary__action__button">
+                    <span class="button-text">Авторизоваться</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="basket-catalog">
+        <div class="basket-catalog-container">
+            <h1 class="basket-catalog__header">С этими товарами покупают</h1>
+            <div class="basket-catalog-list">
+                <ul class="catalog-list">
+                    <li class="catalog-list-item">
+                        <a class="catalog-list-item-link" href="../card-item-page/index.html">
+                            <img class="catalog-list-item_img" src="../imgs/catalog1.jpg" alt="">
+                            <a class="catalog-list-item_title" href="../card-item-page/index.html">Кроссовки
+                                INSTREET</a>
+                            <h3 class="catalog-list-item_price">2 300 ₽</h3>
+                            <s class="catalog-list-item_full-price">3 300 ₽</s>
+                            <h3 class="catalog-list-item_size">39 40 41</h3>
+                        </a>
+                        <a class="catalog-list-item_buy">
+                            <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 42 42">
+                                <path fill="white"
+                                      d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
+                            </svg>
+                        </a>
+                        <span class="catalog-list-item_percent-sale">-27%</span>
+                    </li>
+                    <li class="catalog-list-item">
+                        <a class="catalog-list-item-link" href="../card-item-page/index.html">
+                            <img class="catalog-list-item_img" src="../imgs/catalog2.jpg" alt="">
+                            <a class="catalog-list-item_title" href="">Рюкзак женский INSTREET</a>
+                            <h3 class="catalog-list-item_price">500 ₽</h3>
+                            <s class="catalog-list-item_full-price">1 500 ₽</s>
+                            <h3 class="catalog-list-item_size">ONE SIZE</h3>
+                        </a>
+                        <a class="catalog-list-item_buy">
+                            <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 42 42">
+                                <path fill="white"
+                                      d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
+                            </svg>
+                        </a>
+                        <span class="catalog-list-item_percent-sale">-13%</span>
+                    </li>
+                    <li class="catalog-list-item displnone767">
+                        <a class="catalog-list-item-link" href="../card-item-page/index.html">
+                            <img class="catalog-list-item_img" src="../imgs/catalog3.jpg" alt="">
+                            <a class="catalog-list-item_title" href="">Лоферы тикток NoName</a>
+                            <h3 class="catalog-list-item_price">1 200 ₽</h3>
+                            <s class="catalog-list-item_full-price">2 200 ₽</s>
+                            <h3 class="catalog-list-item_size">43 44 45</h3>
+                        </a>
+                        <a class="catalog-list-item_buy">
+                            <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 42 42">
+                                <path fill="white"
+                                      d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
+                            </svg>
+                        </a>
+                        <span class="catalog-list-item_percent-sale">-53%</span>
+                    </li>
+                    <li class="catalog-list-item displnone767">
+                        <a class="catalog-list-item-link" href="../card-item-page/index.html">
+                            <img class="catalog-list-item_img" src="../imgs/catalog4.jpg" alt="">
+                            <a class="catalog-list-item_title" href="">Тапочки женские Despasita</a>
+                            <h3 class="catalog-list-item_price">800 ₽</h3>
+                            <s class="catalog-list-item_full-price">1800 ₽</s>
+                            <h3 class="catalog-list-item_size">37 38 39</h3>
+                        </a>
+                        <a class="catalog-list-item_buy">
+                            <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 42 42">
+                                <path fill="white"
+                                      d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
+                            </svg>
+                        </a>
+                        <span class="catalog-list-item_percent-sale">-13%</span>
+                    </li>
+                    <li class="catalog-list-item displnone">
+                        <a class="catalog-list-item-link" href="../card-item-page/index.html">
+                            <img class="catalog-list-item_img" src="../imgs/catalog5.jpg" alt="">
+                            <a class="catalog-list-item_title" href="">Шлепанцы женские Relative</a>
+                            <h3 class="catalog-list-item_price"> 5 400 ₽</h3>
+                            <s class="catalog-list-item_full-price"> 15 400 ₽</s>
+                            <h3 class="catalog-list-item_size">36 37 39</h3>
+                        </a>
+                        <a class="catalog-list-item_buy">
+                            <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="undefined"
+                                 height="undefined"
+                                 viewBox="0 0 42 42">
+                                <path fill="white"
+                                      d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2l2.98-15zm-7.023 12H13.696l-1.471-9h22.951l-1.699 9zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4zm13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4z"/>
+                            </svg>
+                        </a>
+                        <span class="catalog-list-item_percent-sale">-67%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </main>
 <footer>

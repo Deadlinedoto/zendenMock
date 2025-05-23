@@ -1,16 +1,42 @@
 document.addEventListener('DOMContentLoaded', function() {
     const input = document.querySelector('.num-form__input');
-    const minusButton = document.querySelector('.num-form__button');
-    const minusSvg = minusButton.querySelector('.num-form__svg');
+    const numButton = document.querySelector('.num-form__button');
+    const minusSvg = numButton.querySelector('.num-form__svg-minus');
 
-    function updateMinusButtonColor() {
-        const val = parseInt(input.value, 10);
-        minusSvg.style.color = (val <= 1) ? '#c7c7c7' : '#303030';
+
+
+
+    const minusButton = document.querySelector('.button-minus')
+    const plusButton = document.querySelector('.button-plus')
+
+
+
+    minusButton.addEventListener('click', function () {
+        input.stepDown();
+        updateMinusColor();
+    });
+
+    plusButton.addEventListener('click', function () {
+        input.stepUp();
+        updateMinusColor();
+    });
+
+    function updateMinusColor() {
+        if (Number(input.value) > 1) {
+            minusSvg.style.color = '#303030'
+            console.log("Черный")
+        }
+        else {
+            minusSvg.style.color = '#c7c7c7'
+            console.log("Серый")
+        }
     }
 
-    // Инициализация при загрузке
-    updateMinusButtonColor();
 
-    // Обновляем при изменении инпута (например, если input не readonly)
-    input.addEventListener('change', updateMinusButtonColor);
+    updateMinusColor();
+
+
+
+
+
 });

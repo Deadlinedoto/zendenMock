@@ -1,5 +1,8 @@
+@import "../../styles/main.css";
+
 main {
     background: #f2f2f2;
+    padding: 0 0 64px;
 }
 .basket-header {
     padding: 32px 0;
@@ -31,6 +34,9 @@ main {
 .basket {
     width: 1408px;
     margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
 .basket-list {
     display: flex;
@@ -144,7 +150,9 @@ main {
     font-weight: 500;
     color: #303030;
 }
-
+.basket-list-card-controls__quantity {
+    width: 116px;
+}
 .num-form {
     display: flex;
     flex-direction: row;
@@ -163,12 +171,19 @@ main {
     border: none;
     background: #ffffff;
     border-radius: 9999px;
+    cursor: pointer;
 }
 .num-form__svg {
     display: flex;
     width: 17px;
     height: 17px;
     color: #303030;
+}
+.num-form__svg-minus {
+    display: flex;
+    width: 17px;
+    height: 17px;
+    color: currentColor;
 }
 .num-form__input {
     text-align: center;
@@ -180,3 +195,207 @@ main {
     font-size: 14px;
     font-weight: 600;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.basket-list-card-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+.basket-list-card-controls__price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    width: 116px;
+}
+.basket-price__extras {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    height: 24px;
+}
+
+.basket-price__extras-sale {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.basket-price__extras-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #e51616;
+    padding: 0 5px;
+    height: 16px;
+
+    border-radius: 9999px;
+}
+.basket-price__extras-old {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 13px;
+    color: #525252;
+}
+.basket-price__current {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #303030;
+    height: 24px;
+}
+.basket-list-card-controls__action-svg {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+
+}
+.basket-list-card-controls__action-svg svg {
+    height: 24px;
+    width: 24px;
+    color: #c7c7c7;
+    transition: color 0.3s ease;
+
+}
+.basket-list-card-controls__action-svg svg:hover {
+    color: #303030;
+}
+
+.basket-list-card-controls__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+.basket-check-summary {
+    background: #ffffff;
+    width: 100%;
+    padding: 24px;
+}
+.checkout-summary__main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.justify-line {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+}
+.justify-line__title {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 15px;
+    color: #303030;
+}
+.justify-line__desc {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dark-grey {
+    color: #303030;
+}
+.red {
+    color: #e51616;
+}
+.checkout-summary__total {
+    height: calc(45px - 17px);
+    margin: 16px 0 0;
+    padding: 16px 0 0;
+    border-top: 1px solid #f2f2f2;
+}
+.justify-line-large {
+    height: 28px;
+    align-items: center;
+}
+.strong {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.checkout-summary__notification {
+    padding: 16px 24px;
+}
+
+.checkout-summary__notification-inner {
+    display: flex;
+    flex-direction: row;
+}
+.notification-inner__svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+.notification-inner__svg svg {
+    height: 24px;
+    width: 24px;
+}
+.notification-inner__text {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 15px;
+    color: #525252;
+    padding: 4px 0;
+    line-height: 1.3333333333;
+}
+
+.checkout-summary__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 0;
+    height: 48px;
+    background: #52ae32;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+.checkout-summary__action:hover {
+    background: #5bc238;
+
+}
+.checkout-summary__action__button {
+
+}
+.button-text {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.basket-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 565px;
+    margin: 20px 0 40px;
+    padding: 0 10px 10px;
+    background-color: white;
+}
+.basket-catalog-container {
+    margin: 0 113px;
+    padding: 30px 0;
+
+}
+.basket-catalog__header {
+    width: 100%;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Roboto Light", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #303030;
+    margin: 0 0 32px;
+}
+
