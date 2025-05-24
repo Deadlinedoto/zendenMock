@@ -1,11 +1,15 @@
+.header-delivery__container {
+    width: 100%;
+    background: #525252;
+}
 .header-delivery {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: #525252;
     height: 40px;
-    gap: 950px;
-
+    width: 1408px;
+    margin: 0 auto;
 }
 .header-info {
     display: flex;
@@ -91,8 +95,11 @@
     height: 13px;
     width: 13px;
 }
-@media (max-width: 1630px) {
+@media (max-width: 1600px) {
     .header-delivery {
+        width: 1120px;
+        margin: 0 auto;
+        gap: 0;
     }
 }
 @media (max-width: 1600px) {
